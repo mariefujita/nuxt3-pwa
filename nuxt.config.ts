@@ -4,7 +4,8 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   ssr: true,
   modules: [
-    '@kevinmarrec/nuxt-pwa'
+    '@kevinmarrec/nuxt-pwa',
+    '@nuxtjs/tailwindcss'
   ],
   pwa: {
     meta: {
@@ -23,5 +24,13 @@ export default defineNuxtConfig({
     workbox: {
       enabled: true
     }
+  },
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    config: {},
+    injectPosition: 0,
+    viewer: true,
   }
 })

@@ -1,4 +1,18 @@
 {
   // https://v3.nuxtjs.org/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "preserve",
+    "types": [
+      "@nuxt/types",
+      "@nuxtjs/date-fns"
+    ],
+    "skipLibCheck": true,
+  }
 }
