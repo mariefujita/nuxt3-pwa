@@ -7,11 +7,12 @@
       "dom"
     ],
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "node",
     "jsx": "preserve",
+    "allowJs": true,
     "types": [
-      "@nuxt/types",
-      "@nuxtjs/date-fns"
+      "node"
     ],
     "skipLibCheck": true,
   }

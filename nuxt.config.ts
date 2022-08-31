@@ -4,9 +4,14 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   ssr: true,
   modules: [
-    '@kevinmarrec/nuxt-pwa',
-    '@nuxtjs/tailwindcss'
+    '@kevinmarrec/nuxt-pwa'
   ],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   pwa: {
     meta: {
       mobileAppIOS: true,
@@ -14,23 +19,15 @@ export default defineNuxtConfig({
     },
     manifest: {
       lang: 'ja',
-      name: 'Nuxt with PWA',
-      short_name: 'PWA/Nuxt',
+      name: 'Nuxt3 SSR with PWA',
+      short_name: 'PWA/Nuxt3',
       display: 'standalone',
       background_color: '#111827',
       theme_color: '#3B82F6',
       start_url: 'https://nuxt3-pwa-seven.vercel.app/'
     },
     workbox: {
-      enabled: true
+      enabled: false
     }
-  },
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config.js',
-    exposeConfig: false,
-    config: {},
-    injectPosition: 0,
-    viewer: true,
   }
 })
