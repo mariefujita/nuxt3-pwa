@@ -12,7 +12,7 @@
     </NuxtLink>
     <h2 class="dark:text-gray-100 font-bold text-3xl mb-5">Next.js</h2>
     <template v-for="article in articles" :key="article.id">
-      <ArticleCard :created_at="article.created_at" :tags="article.tags" :title="article.title" :url="article.url" :user="article.user" :id="article.id" />
+      <ArticleCard :article="article" />
     </template>
   </div>
 </template>
