@@ -8,7 +8,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@kevinmarrec/nuxt-pwa": "^0.3.1",
+    "@kevinmarrec/nuxt-pwa": "^0.9.1",
     "autoprefixer": "^10.4.8",
     "nuxt": "3.0.0-rc.8",
     "postcss": "^8.4.16",
