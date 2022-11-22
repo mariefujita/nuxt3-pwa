@@ -1,5 +1,5 @@
 <script setup>
-import '@/assets/css/tailwind.css'
+// import '@/assets/css/tailwind.css'
 </script>
 <template>
   <NuxtLayout>

@@ -2,12 +2,6 @@
 export default defineNuxtConfig({
 	ssr: true,
 	modules: ['@kevinmarrec/nuxt-pwa'],
-	postcss: {
-		plugins: {
-			tailwindcss: {},
-			autoprefixer: {},
-		},
-	},
 	pwa: {
 		meta: {
 			mobileAppIOS: true,

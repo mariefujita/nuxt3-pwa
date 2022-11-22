@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  const { data: articles } = await useFetch('https://qiita.com/api/v2/items?page=1&per_page=10&query=Next.js')
+  // const { data: articles } = await useFetch('https://qiita.com/api/v2/items?page=1&per_page=10&query=Next.js')
 </script>
 
 <template>
@@ -11,8 +11,8 @@
     Back
     </NuxtLink>
     <h2 class="dark:text-gray-100 font-bold text-3xl mb-5">Next.js</h2>
-    <template v-for="article in articles" :key="article.id">
+    <!-- <template v-for="article in articles" :key="article.id">
       <ArticleCard :article="article" />
-    </template>
+    </template> -->
   </div>
 </template>

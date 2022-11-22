@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute()
 const slug: string | string[] = route.params.id
-const { data: article, pending, error } = await useLazyFetch(`https://qiita.com/api/v2/items/${slug}`)
+// const { data: article, pending, error } = await useLazyFetch(`https://qiita.com/api/v2/items/${slug}`)
 </script>
 
 <template>
@@ -12,9 +12,9 @@ const { data: article, pending, error } = await useLazyFetch(`https://qiita.com/
     >
       Back
     </button>
-    <div class="dark:text-gray-100 break-words">
+    <!-- <div class="dark:text-gray-100 break-words">
       <h3 class="text-3xl font-semibold mb-10">{{ article.title }}</h3>
       <div v-html="article.rendered_body" />
-    </div>
+    </div> -->
   </div>
 </template>
